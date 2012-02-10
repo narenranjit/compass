@@ -16,6 +16,10 @@ module Compass::SassExtensions::Functions::Trig
     trig(:tan, number)
   end
   
+  def sqrt(number)
+    Math.sqrt(number)
+  end
+  
   private
   def trig(operation, number)
     if number.numerator_units == ["deg"] && number.denominator_units == []
